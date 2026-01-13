@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مكتب وجدان الصالحي للمحاماة | Wejdan Al-Salhi Law Firm</title>
+    <script type="module" src="/index.tsx"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --legal-gold: #b8966b;
+        --legal-dark: #0c162d;
+        --legal-bg: #fdfbf7;
+      }
+      body {
+        font-family: 'Cairo', 'Noto Kufi Arabic', sans-serif;
+        background-color: var(--legal-bg);
+        color: var(--legal-dark);
+        -webkit-font-smoothing: antialiased;
+      }
+      .bg-legal-dark { background-color: var(--legal-dark); }
+      .text-legal-gold { color: var(--legal-gold); }
+      .bg-legal-gold { background-color: var(--legal-gold); }
+      .border-legal-gold { border-color: var(--legal-gold); }
+      
+      html { scroll-behavior: smooth; }
+
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: var(--legal-gold); border-radius: 10px; }
+      
+      .hero-gradient {
+        background: linear-gradient(to bottom, rgba(12, 22, 45, 0.8), rgba(12, 22, 45, 0.95));
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
